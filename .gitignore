@@ -1,0 +1,9 @@
+node_modules/
+build/
+.env
+.env.*
+!.env.example
+*.cert
+*.key
+*.log
+ecs-task-definition.json

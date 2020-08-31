@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "CommonJS",
+    "outDir": "./build",
+    "paths": {
+      "@components": ["src/components/index"],
+      "@components/*": ["src/components/*"],
+      "@db": ["src/_db/index"],
+      "@db/*": ["src/_db/*"],
+      "@config": ["src/_config/index"],
+      "@config/*": ["src/_config/*"],
+      "@tests": ["src/__tests__/index"],
+      "@tests/*": ["src/__tests__/*"],
+      "@services": ["src/services/index"],
+      "@services/*": ["src/services/*"]
+    },
+    "target": "ES5"
+  }
+}

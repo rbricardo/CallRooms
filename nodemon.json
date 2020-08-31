@@ -1,0 +1,7 @@
+{
+  "exec": "NODE_ENV=local ts-node -r tsconfig-paths/register src/index.ts",
+  "ext": "ts",
+  "ignore": ["src/__tests__", ".log"],
+  "quiet": false,
+  "watch": ["src"]
+}

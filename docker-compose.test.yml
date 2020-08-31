@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  postgres_db_test:
+    image: postgres
+    container_name: postgres_db_test
+    restart: always
+    ports:
+      - ${DB_PORT}:5432
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
