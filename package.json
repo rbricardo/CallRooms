@@ -8,10 +8,10 @@
   "scripts": {
     "dev": "nodemon",
     "lint": "eslint . --ext .ts",
-    "migrate:local": "NODE_ENV=local npm run typeorm -- migration:run",
+    "local:migrate": "NODE_ENV=local npm run typeorm -- migration:run",
     "migration:create": "NODE_ENV=local npm run typeorm -- migration:create -n",
-    "setup:local": "make setup/local",
-    "setup:test": "make setup/test",
+    "setup:local": "make run-dev",
+    "setup:test": "make run-test",
     "start": "NODE_ENV=production ts-node -r tsconfig-paths/register src/index.ts",
     "pretest": "NODE_ENV=test make run-test && npm run typeorm -- migration:run",
     "test": "NODE_ENV=test jest -i --no-cache",

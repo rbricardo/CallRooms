@@ -1,4 +1,6 @@
-# :zap: GOEntregas API
+# Call Rooms API
+
+### An awesome API to create rooms for calls.
 
 ## Setup
 
@@ -40,7 +42,7 @@ LOGGING_LEVEL="debug"
 LOGGING_TYPE="dev"
 
 # SERVER
-SERVER_PORT="3000"
+SERVER_PORT="7777"
 ```
 
 ### Installing Packages
@@ -77,8 +79,8 @@ $ npm run migration:create CreateUsersTable
 
 ```shell
 # this will run migrations in your local database
-$ npm run local:migrate
+$ npm run migrate:local
 
 # this will run migrations in your test database
-$ npm run test:migrate
+$ npm run migrate:test
 ```
