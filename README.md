@@ -84,3 +84,12 @@ $ npm run migrate:local
 # this will run migrations in your test database
 $ npm run migrate:test
 ```
+
+## Postman
+
+If you want to test the api on postman, fell free to get this collection:
+
+https://www.getpostman.com/collections/063ce86c1343eebed972
+
+(You need to create a global variable called "url")
+
