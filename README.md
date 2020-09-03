@@ -85,7 +85,7 @@ $ npm run migrate:local
 $ npm run migrate:test
 ```
 
-## Postman
+## Testing the API Calls
 
 If you want to test the api on postman, fell free to get this collection:
 

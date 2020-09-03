@@ -78,11 +78,8 @@ export default class RoomsService {
   }
 
   public async joinRoom({ roomId, username }: JoinRoom): Promise<Room> {
-    console.log(roomId, '????')
     const room = await this.getRoom({ id: roomId })
-    console.log(room, 'room')
     if (!room) throw { error: 'Room not found' }
-    console.log('aeae')
     const participants = JSON.stringify(room.participants)
     let parsedParticipants = parseParticipants(participants)
 
@@ -99,9 +96,7 @@ export default class RoomsService {
   }
 
   public async leaveRoom({ roomId, username }: LeaveRoom): Promise<Room> {
-    console.log(roomId, 'roomId')
     const room = await this.getRoom({ id: roomId })
-    console.log(room, 'room')
     if (!room) throw { error: 'Room not found' }
 
     const participants = JSON.stringify(room.participants)
